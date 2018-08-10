@@ -31,7 +31,7 @@ public class SecondServlet extends HttpServlet
 		ResultSet rs=null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=muzeeb");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=*****");
 			pstmt=con.prepareStatement(qry);
 			pstmt.setLong(1, phone);
 			rs=pstmt.executeQuery();
